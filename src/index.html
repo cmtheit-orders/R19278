@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Conway's Game of Life</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"
+          integrity="sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="display-ctn">
+  <div id="display-info">
+    <table align="center" border="1px">
+      <caption>Controls</caption>
+      <tbody>
+        <tr>
+          <th colspan="2">Dimension</th>
+          <th colspan="2">Colour</th>
+          <th colspan="2">State</th>
+          <th><label for="interval">Interval(ms)</label></th>
+        </tr>
+        <tr>
+          <td><label for="d-x">X</label></td>
+          <td><label for="d-y">Y</label></td>
+          <td><label for="c-live">Live</label></td>
+          <td><label for="c-die">Die</label></td>
+          <td><label for="s-play">Play</label></td>
+          <td><label for="s-pause">Pause</label></td>
+          <td rowspan="2"><input type="number" value="1000" min="100" max="5000" id="interval"/></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="d-x" min="10" max="100" value="20"/>
+          </td>
+          <td>
+            <input type="number" id="d-y" min="10" max="100" value="20">
+          </td>
+          <td>
+            <input type="color" id="c-live" min="10" max="100" value="#333333"/>
+          </td>
+          <td>
+            <input type="color" id="c-die" min="10" max="100" value="#ffffff">
+          </td>
+          <td>
+            <input type="radio" name="state" value="play" checked id="s-play"/>
+          </td>
+          <td>
+            <input type="radio" name="state" value="pause" id="s-pause">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="display"></div>
+</div>
+
+<script src="automata.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

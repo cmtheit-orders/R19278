@@ -1,0 +1,17 @@
+Your challenge is to submit a design which combines both sound
+ generation, using Tone.js, and an elementary cellular automaton.
+ This means that there will be both a visual and auditory output
+ from the page. You may also need to consult the Tone.js
+ documentationLinks to an external site. for additional audio
+ nodes or more complex scheduling. The sound and visuals should
+ embody a clear connection and both be driven by the evolution
+ of successive generations in the cellular automata. You may
+ still use additional techniques, like the combinatorial process
+ used in the simple music machine exercise.
+
+
+你的挑战是提交一个设计，它结合了声音的产生，使用Tone.js，和一个基本的细胞自动机。
+这意味着页面将同时有视觉和听觉输出。 您可能还需要查阅Tone.js文档链接到外部站点。
+用于额外的音频节点或更复杂的调度。 声音和视觉应该体现一种清晰的联系，并且两者都是
+由细胞自动机中连续几代的进化所驱动的。您还可以使用其他技术，例如在简单的音乐机器练
+习中使用的组合过程。
